@@ -9,8 +9,8 @@ SNPEff is a variant annotation and effect prediction tool. It annotates variants
 
 ## Requirement
 Option 1: linux OS <br/>
-Option 2: Windows OS - use cygwin terminal or virtual box to execute linux commands
-Option 3: Galaxy (web-based tool)
+Option 2: Windows OS - use cygwin terminal or virtual box to execute linux commands <br/>
+Option 3: Galaxy (web-based platform) <br/>
 
 ## Data Used for this analysis
 - list of SNPs for wheat genome to annotate
@@ -18,21 +18,21 @@ Option 3: Galaxy (web-based tool)
 - Reference sequence for wheat: Chinese spring v1.0
 
 ## Steps of Analysis
-Step 1: Download snpEff
-Step 2: Download reference genome, gtf, cds, protein.fa
-Genome fasta - https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip
-GTF - http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz
-CDS - http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz
-Protein/pep - http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes
-Note: For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not  .fasta
-Step 3: Filter VCF file as per chromosome of interest (or process with all chromosomes)
-Step 4: Convert convert gff to gtf.
-Step 5: Concatenate gff file with fasta, so that when program will read gff file, it will get genome sequence there.
-Step 6: Modify snpEff.config (in editor eg. vim)
-        Under Non-standard Databases add the following:
-        # Wheat genome, version IWGSCv1.0
-        IWGSCv1.0.genome : Wheat IWGSCv1.0
-Step 7: Run snpEff
+Step 1: Download snpEff <br/>
+Step 2: Download reference genome, gtf, cds, protein.fa <br/>
+Genome fasta - https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip <br/>
+GTF - http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz <br/>
+CDS - http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz <br/>
+Protein/pep - http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes <br/>
+Note: For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not .fasta <br/>
+Step 3: Filter VCF file as per chromosome of interest (or process with all chromosomes) <br/>
+Step 4: Convert convert gff to gtf. <br/>
+Step 5: Concatenate gff file with fasta, so that when program will read gff file, it will get genome sequence there. <br/>
+Step 6: Modify snpEff.config (in editor eg. vim) <br/>
+</t>    Under Non-standard Databases add the following: <br/>
+</t>    # Wheat genome, version IWGSCv1.0 <br/>
+</t>    IWGSCv1.0.genome : Wheat IWGSCv1.0 <br/>
+Step 7: Run snpEff <br/>
 
 ### Output
 1. VCF file: Annotated VCF file
@@ -40,5 +40,5 @@ Step 7: Run snpEff
 3. Text file: Summary of number of variant types per gene
 
 ## References
-[1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/
+[1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/ <br/>
 [2] https://pcingola.github.io/SnpEff/
