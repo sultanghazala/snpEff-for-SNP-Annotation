@@ -12,18 +12,18 @@ Option 1: linux OS <br/>
 Option 2: Windows OS - use cygwin terminal or virtual box to execute linux commands <br/>
 Option 3: Galaxy (web-based platform) <br/>
 
-## Data Used for this analysis
+## Data Used
 - list of SNPs for wheat genome to annotate
 - VCF file from GWAS analysis
 - Reference sequence for wheat: Chinese spring v1.0
 
 ## Steps of Analysis
-<b> Step 1: </b> Download SnpEff <br/>
+<b> Step 1: </b> Download snpEff <br/>
 <b> Step 2: </b> Download reference genome, gtf, cds, protein.fa <br/>
-Genome fasta[https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip], 
-GTF[http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz], 
-CDS[http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz], 
-Protein/pep[http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes] <br/>
+[RefSeq fasta](https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip), 
+[GTF](http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz), 
+[CDS](http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz), 
+[Protein/pep fasta](http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes) <br/>
 <b> Note: </b> For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not .fasta <br/>
 <b> Step 3: </b> Filter VCF file as per chromosome of interest (or process with all chromosomes) <br/>
 <b> Step 4: </b> Convert convert gff to gtf. <br/>
@@ -32,7 +32,7 @@ Protein/pep[http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_a
 </t>    Under Non-standard Databases add the following: <br/>
 </t>    # Wheat genome, version IWGSCv1.0 <br/>
 </t>    IWGSCv1.0.genome : Wheat IWGSCv1.0 <br/>
-<b> Step 7: </b> Run SnpEff <br/>
+<b> Step 7: </b> Run snpEff <br/>
 
 ### Output
 <b> 1. VCF file: </b> Annotated VCF file <br/>
