@@ -35,9 +35,9 @@ Protein/pep[http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_a
 <b> Step 7: </b> Run SnpEff <br/>
 
 ### Output
-<b> 1. VCF file: </b> Annotated VCF file
-<b> 2. HTML file: </b> Summary statistics (for variants and their annotations)
-<b> 3. Text file: </b> Summary of number of variant types per gene
+<b> 1. VCF file: </b> Annotated VCF file <br/>
+<b> 2. HTML file: </b> Summary statistics (for variants and their annotations) <br/>
+<b> 3. Text file: </b> Summary of number of variant types per gene <br/>
 
 ## References
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/ <br/>
