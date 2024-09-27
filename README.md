@@ -18,26 +18,26 @@ Option 3: Galaxy (web-based platform) <br/>
 - Reference sequence for wheat: Chinese spring v1.0
 
 ## Steps of Analysis
-Step 1: Download snpEff <br/>
-Step 2: Download reference genome, gtf, cds, protein.fa <br/>
-Genome fasta - https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip <br/>
-GTF - http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz <br/>
-CDS - http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz <br/>
-Protein/pep - http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes <br/>
-Note: For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not .fasta <br/>
-Step 3: Filter VCF file as per chromosome of interest (or process with all chromosomes) <br/>
-Step 4: Convert convert gff to gtf. <br/>
-Step 5: Concatenate gff file with fasta, so that when program will read gff file, it will get genome sequence there. <br/>
-Step 6: Modify snpEff.config (in editor eg. vim) <br/>
+<b> Step 1: </b> Download snpEff <br/>
+<b> Step 2: </b> Download reference genome, gtf, cds, protein.fa <br/>
+Genome fasta[https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip], 
+GTF[http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz], 
+CDS[http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz], 
+Protein/pep[http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes] <br/>
+<b> Note: </b> For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not .fasta <br/>
+<b> Step 3: </b> Filter VCF file as per chromosome of interest (or process with all chromosomes) <br/>
+<b> Step 4: </b> Convert convert gff to gtf. <br/>
+<b> Step 5: </b> Concatenate gff file with fasta, so that when program will read gff file, it will get genome sequence there. <br/>
+<b> Step 6: </b> Modify snpEff.config (in editor eg. vim) <br/>
 </t>    Under Non-standard Databases add the following: <br/>
 </t>    # Wheat genome, version IWGSCv1.0 <br/>
 </t>    IWGSCv1.0.genome : Wheat IWGSCv1.0 <br/>
-Step 7: Run snpEff <br/>
+<b> Step 7: </b> Run snpEff <br/>
 
 ### Output
-1. VCF file: Annotated VCF file
-2. HTML file: Summary statistics (for variants and their annotations)
-3. Text file: Summary of number of variant types per gene
+<b> 1. VCF file: </b> Annotated VCF file
+<b> 2. HTML file: </b> Summary statistics (for variants and their annotations)
+<b> 3. Text file: </b> Summary of number of variant types per gene
 
 ## References
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/ <br/>
