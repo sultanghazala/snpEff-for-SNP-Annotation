@@ -8,7 +8,7 @@ SNPEff is a variant annotation and effect prediction tool. It annotates variants
 - Gene Ontology (GO) and Pathway Enrichment: SNPEff can identify enriched GO terms and pathways associated with annotated variants, providing insights into their biological functions.
 
 ## Requirement
-Option 1: linux OS
+Option 1: linux OS <br/>
 Option 2: Windows OS - use cygwin terminal or virtual box to execute linux commands
 Option 3: Galaxy (web-based tool)
 
