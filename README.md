@@ -45,7 +45,7 @@ Option 3: Galaxy (web-based platform) <br/>
 
 <br>
 
-## Customized & Executed by:
+## Developed by:
 <b> Ghazala Sultan, Ph.D. </b> 
 <br>
 <b> Author name: </b> Ghazala Sultan | Google Scholar | ORCID: 0000-0001-8188-9304
