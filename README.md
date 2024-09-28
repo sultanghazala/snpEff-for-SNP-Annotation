@@ -1,6 +1,6 @@
 # SnpEff-for-SNP-Annotation
 
-SNPEff is a variant annotation and effect prediction tool. It annotates variants based on their genomic locations and predicts coding effects. Annotated genomic locations include intronic, untranslated region, upstream, downstream, splice site, or intergenic regions. Coding effects such as synonymous or non-synonymous amino acid replacement, start codon gains or losses, stop codon gains or losses, or frame shifts can be predicted.
+SnpEff is a variant annotation and effect prediction tool. It annotates variants based on their genomic locations and predicts coding effects. Annotated genomic locations include intronic, untranslated region, upstream, downstream, splice site, or intergenic regions. Coding effects such as synonymous or non-synonymous amino acid replacement, start codon gains or losses, stop codon gains or losses, or frame shifts can be predicted.
 
 ### Key Features:
 - Variant Annotation: SnpEff can annotate various types of genetic variants, including SNPs, indels, CNVs, and structural variants.
@@ -9,7 +9,7 @@ SNPEff is a variant annotation and effect prediction tool. It annotates variants
 
 ## Requirement
 Option 1: linux OS <br/>
-Option 2: Windows OS - use cygwin terminal or virtual box to execute linux commands <br/>
+Option 2: Windows OS - use Virtual box or Ubuntu terminal environment with Windows Subsystem for Linux (WSL) <br/>
 Option 3: Galaxy (web-based platform) <br/>
 
 ## Data Used
@@ -42,3 +42,10 @@ Option 3: Galaxy (web-based platform) <br/>
 ## References
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/ <br/>
 [2] https://pcingola.github.io/SnpEff/
+
+
+<br>
+
+## Customized & Executed by:
+<b> Ghazala Sultan, Ph.D. </b> 
+<b> Author's name: </b> Ghazala Sultan | Google Scholar | ORCID: 0000-0001-8188-9304
