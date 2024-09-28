@@ -39,6 +39,8 @@ Option 3: Galaxy (web-based platform) <br/>
 <b> 2. HTML file: </b> Summary statistics (for variants and their annotations) <br/>
 <b> 3. Text file: </b> Summary of number of variant types per gene <br/>
 
+<br>
+
 ## References
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/ <br/>
 [2] https://pcingola.github.io/SnpEff/
