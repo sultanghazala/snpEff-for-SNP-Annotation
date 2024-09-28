@@ -1,4 +1,4 @@
-# SnpEff-for-SNP(variant)-Annotation
+# SnpEff-for-Variant-Annotation
 
 SnpEff is a variant annotation and effect prediction tool. It annotates variants based on their genomic locations and predicts coding effects. Annotated genomic locations include intronic, untranslated region, upstream, downstream, splice site, or intergenic regions. Coding effects such as synonymous or non-synonymous amino acid replacement, start codon gains or losses, stop codon gains or losses, or frame shifts can be predicted.
 
