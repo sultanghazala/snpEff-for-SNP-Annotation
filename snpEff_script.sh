@@ -12,17 +12,17 @@
 #=============================#
 # Folder: snpEff_latest_core/snpEff/data/
 # File: 1. snpeff.config (modified by adding genome of interest)
-#		2. input_snp.vcf
+#	2. input_snp.vcf_ 
+#       Note: vcf: standard Variant Call data Format & vcf_: modified version with additional fields for specific purposes)
 # 
 # Folder: snpEff_latest_core/snpEff/data/genomes/
 # File: 1. IWGSCv1.0.fa
-#		2. input_snp.vcf
 # 	  
 # Folder: snpEff_latest_core/snpEff/data/genomes/IWGSv1.0/
 # File: 1. sequence.fa 
-#		2. genes.gtf/gff
-#		3. cds.fa
-#		4. protein.fa				    					
+#	2. genes.gtf/gff
+#	3. cds.fa
+#	4. protein.fa				    					
 										
 #===========================#
 # SnpEff Script [Complete]
@@ -50,12 +50,12 @@ wget https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0
 java -Xmx8g -jar snpEff.jar build -gtf22 -v IWGSCv1.0
 
 #vcf annotation (it will use snpEffectPredictor.bin file from IWGSv1.0 folder)
-java -Xmx8g -jar snpEff.jar -v IWGSCv1.0 input_snp.vcf > output/annotated_snp.vcf
+java -Xmx8g -jar snpEff.jar -v IWGSCv1.0 input_snp.vcf_ > output/annotated_snp.vcf
 
 #==============================#
 # Output files & folders order
 #==============================#
 # Folder: snpEff_latest_core/snpEff/output/
 # File: 1. annotated_snp.vcf
-#		2. snpEff_genes.txt
-#		3. snpEff_summary.html
+#	2. snpEff_genes.txt
+#	3. snpEff_summary.html
