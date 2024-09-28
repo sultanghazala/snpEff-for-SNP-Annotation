@@ -19,19 +19,18 @@ Option 3: Galaxy (web-based platform) <br/>
 
 ## Steps of Analysis
 <b> Step 1: </b> Download snpEff <br/>
-<b> Step 2: </b> Download reference genome, gtf, cds, protein.fa <br/>
-[RefSeq fasta](https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip), 
-[GTF](http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz), 
-[CDS](http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz), 
-[Protein/pep fasta](http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes) <br/>
-<b> Note: </b> For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not .fasta <br/>
+<b> Step 2: </b> Download [RefSeq fasta (reference sequence of genome)](https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip), 
+[GTF (annotation file)](http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz), 
+[CDS (coding sequence)](http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aestivum/cds/Triticum_aestivum.IWGSC.cds.all.fa.gz), 
+[Protein fasta (protein sequence)](http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/triticum_aes) <br/>
+&emsp; Note: </b> For fasta files, snpEff have protocol to consider fasta files only with extension .fa  not .fasta <br/>
 <b> Step 3: </b> Filter VCF file as per chromosome of interest (or process with all chromosomes) <br/>
 <b> Step 4: </b> Convert convert gff to gtf. <br/>
 <b> Step 5: </b> Concatenate gff file with fasta, so that when program will read gff file, it will get genome sequence there. <br/>
 <b> Step 6: </b> Modify snpEff.config (in editor eg. vim) <br/>
-</t>    Under Non-standard Databases add the following: <br/>
-</t>    # Wheat genome, version IWGSCv1.0 <br/>
-</t>    IWGSCv1.0.genome : Wheat IWGSCv1.0 <br/>
+&emsp; Under Non-standard Databases add the following: <br/>
+&emsp; &nbsp; # Wheat genome, version IWGSCv1.0 <br/>
+&emsp; &nbsp; IWGSCv1.0.genome : Wheat IWGSCv1.0 <br/>
 <b> Step 7: </b> Run snpEff <br/>
 
 ### Output
@@ -43,9 +42,9 @@ Option 3: Galaxy (web-based platform) <br/>
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679285/ <br/>
 [2] https://pcingola.github.io/SnpEff/
 
-
 <br>
 
 ## Customized & Executed by:
 <b> Ghazala Sultan, Ph.D. </b> 
-<b> Author's name: </b> Ghazala Sultan | Google Scholar | ORCID: 0000-0001-8188-9304
+<br>
+<b> Author name: </b> Ghazala Sultan | Google Scholar | ORCID: 0000-0001-8188-9304
