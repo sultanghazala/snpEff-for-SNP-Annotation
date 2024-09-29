@@ -13,11 +13,12 @@ Option 2: Windows - use Virtual box or Ubuntu terminal environment with WSL (Win
 Option 3: Galaxy (web-based platform) <br/>
 
 ## Data (Input)
-- list of SNPs for wheat genome to annotate
-- VCF file from GWAS analysis
-- Reference sequence for wheat: Chinese spring v1.0
+- list of SNPs in VCF file
+- reference sequence fasta files
+- reference annotation file (gtf, gff)
 
 ## Steps of Analysis
+This analysis is carried out to annotate list of SNPs obtained from GWAS analysis of wheat genome (Chinese spring v1.0) <br/>
 <b> Step 1: </b> Download snpEff <br/>
 <b> Step 2: </b> Download [RefSeq fasta (genome sequence)](https://urgi.versailles.inra.fr/download/iwgsc/IWGSC_RefSeq_Assemblies/v1.0/iwgsc_refseqv1.0_all_chromosomes.zip), 
 [GTF (annotation file)](http://ftp.ensemblgenomes.org/pub/plants/release-52/gtf/triticum_aestivum/Triticum_aestivum.IWGSC.52.gtf.gz), 
